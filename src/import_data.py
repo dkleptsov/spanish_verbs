@@ -1,6 +1,58 @@
 import sqlite3
 import csv
 
+
+CSV_PATH = "data/imperativo.csv"
+DB_PATH = "data/imperativo.db"
+
+
+def create_tables(cursor):
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS verbs (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            verb TEXT NOT NULL
+        )
+    ''')
+
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS tenses (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            tense TEXT NOT NULL
+        )
+    ''')
+
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS subjects (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            subject TEXT NOT NULL
+        )
+    ''')
+
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS verb_forms (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            verb_id INTEGER NOT NULL,
+            tense_id INTEGER NOT NULL,
+            subject_id INTEGER NOT NULL,
+            form TEXT NOT NULL,
+            FOREIGN KEY (verb_id) REFERENCES verbs(id),
+            FOREIGN KEY (tense_id) REFERENCES tenses(id),
+            FOREIGN KEY (subject_id) REFERENCES subjects(id)
+        )
+    ''')
+
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS examples (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            verb_form_id INTEGER NOT NULL,
+            example TEXT NOT NULL,
+            FOREIGN KEY (verb_form_id) REFERENCES verb_forms(id)
+        )
+    ''')
+
+    cursor.connection.commit()
+
+
 def import_data_from_csv(cursor, csv_file):
     with open(csv_file, 'r', encoding='utf-8') as file:
         reader = csv.DictReader(file)
@@ -54,9 +106,8 @@ def import_data_from_csv(cursor, csv_file):
     cursor.connection.commit()
 
 if __name__ == '__main__':
-    db_name = 'data/verbs.db'
-    csv_file = 'data/test_data.csv'
-    conn = sqlite3.connect(db_name)
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
-    import_data_from_csv(cursor, csv_file)
+    create_tables(cursor)
+    import_data_from_csv(cursor, CSV_PATH)
     conn.close()
