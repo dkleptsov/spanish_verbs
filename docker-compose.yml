@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  rgbot:
+    image: kleptsov/spanish_verbs_bot
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - VERBOS_ESP_TEST_BOT
+    container_name: spanish_verbs_bot
+    restart: always
+  restarter:
+    image: docker
+    volumes: ["/var/run/docker.sock:/var/run/docker.sock"]
+    command: ["/bin/sh", "-c", "while true; do sleep 21600; docker restart spanish_verbs_bot; done"]
+    restart: unless-stopped
+    container_name: spanish_verbs_bot_restarter
