@@ -340,162 +340,182 @@ estudiar,imperativo negativo,nosotros/as,no estudiemos,No estudiemos sin motivo.
 estudiar,imperativo negativo,vosotros/as,no estudiéis,No estudiéis sin ganas.
 estudiar,imperativo negativo,ustedes,no estudien,No estudien mucho hoy.
 llevar,imperativo afirmativo,tú,llévalo,Llévalo a la mesa.
-llevar,imperativo afirmativo,usted/él/ella,lleve,Lleve este paquete.
-llevar,imperativo afirmativo,nosotros/nosotras,llevemos,Llevemos todo juntos.
-llevar,imperativo afirmativo,vosotros/vosotras,llevad,Llevad vuestros libros.
-llevar,imperativo afirmativo,ustedes/ellos/ellas,lleven,Lleven sus pasaportes.
+llevar,imperativo afirmativo,usted,lleve,Lleve este paquete.
+llevar,imperativo afirmativo,nosotros/as,llevemos,Llevemos todo juntos.
+llevar,imperativo afirmativo,vosotros/as,llevad,Llevad vuestros libros.
+llevar,imperativo afirmativo,ustedes,lleven,Lleven sus pasaportes.
 llevar,imperativo negativo,tú,no lleves,No lleves tanto equipaje.
-llevar,imperativo negativo,usted/él/ella,no lleve,No lleve eso allí.
-llevar,imperativo negativo,nosotros/nosotras,no llevemos,No llevemos tantas cosas.
-llevar,imperativo negativo,vosotros/vosotras,no llevéis,No llevéis paraguas.
-llevar,imperativo negativo,ustedes/ellos/ellas,no lleven,No lleven esos libros.
+llevar,imperativo negativo,usted,no lleve,No lleve eso allí.
+llevar,imperativo negativo,nosotros/as,no llevemos,No llevemos tantas cosas.
+llevar,imperativo negativo,vosotros/as,no llevéis,No llevéis paraguas.
+llevar,imperativo negativo,ustedes,no lleven,No lleven esos libros.
 dejar,imperativo afirmativo,tú,deja,Deja eso ahí.
-dejar,imperativo afirmativo,usted/él/ella,deje,Deje su número de teléfono.
-dejar,imperativo afirmativo,nosotros/nosotras,dejemos,Dejemos la discusión para otro momento.
-dejar,imperativo afirmativo,vosotros/vosotras,dejad,Dejad la puerta abierta.
-dejar,imperativo afirmativo,ustedes/ellos/ellas,dejen,Dejen sus problemas atrás.
+dejar,imperativo afirmativo,usted,deje,Deje su número de teléfono.
+dejar,imperativo afirmativo,nosotros/as,dejemos,Dejemos la discusión para otro momento.
+dejar,imperativo afirmativo,vosotros/as,dejad,Dejad la puerta abierta.
+dejar,imperativo afirmativo,ustedes,dejen,Dejen sus problemas atrás.
 dejar,imperativo negativo,tú,no dejes,No dejes basura en el suelo.
-dejar,imperativo negativo,usted/él/ella,no deje,No deje de practicar.
-dejar,imperativo negativo,nosotros/nosotras,no dejemos,No dejemos que eso nos afecte.
-dejar,imperativo negativo,vosotros/vosotras,no dejéis,No dejéis las llaves puestas.
-dejar,imperativo negativo,ustedes/ellos/ellas,no dejen,No dejen de lado sus sueños.
+dejar,imperativo negativo,usted,no deje,No deje de practicar.
+dejar,imperativo negativo,nosotros/as,no dejemos,No dejemos que eso nos afecte.
+dejar,imperativo negativo,vosotros/as,no dejéis,No dejéis las llaves puestas.
+dejar,imperativo negativo,ustedes,no dejen,No dejen de lado sus sueños.
 seguir,imperativo afirmativo,tú,sigue,Sigue adelante.
-seguir,imperativo afirmativo,usted/él/ella,siga,Siga las instrucciones.
-seguir,imperativo afirmativo,nosotros/nosotras,sigamos,Sigamos trabajando juntos.
-seguir,imperativo afirmativo,vosotros/vosotras,seguid,Seguid el camino marcado.
-seguir,imperativo afirmativo,ustedes/ellos/ellas,sigan,Sigan con el buen trabajo.
+seguir,imperativo afirmativo,usted,siga,Siga las instrucciones.
+seguir,imperativo afirmativo,nosotros/as,sigamos,Sigamos trabajando juntos.
+seguir,imperativo afirmativo,vosotros/as,seguid,Seguid el camino marcado.
+seguir,imperativo afirmativo,ustedes,sigan,Sigan con el buen trabajo.
 seguir,imperativo negativo,tú,no sigas,No sigas por ese camino.
-seguir,imperativo negativo,usted/él/ella,no siga,No siga discutiendo.
-seguir,imperativo negativo,nosotros/nosotras,no sigamos,No sigamos esperando.
-seguir,imperativo negativo,vosotros/vosotras,no sigáis,No sigáis las malas influencias.
-seguir,imperativo negativo,ustedes/ellos/ellas,no sigan,No sigan perdiendo tiempo.
+seguir,imperativo negativo,usted,no siga,No siga discutiendo.
+seguir,imperativo negativo,nosotros/as,no sigamos,No sigamos esperando.
+seguir,imperativo negativo,vosotros/as,no sigáis,No sigáis las malas influencias.
+seguir,imperativo negativo,ustedes,no sigan,No sigan perdiendo tiempo.
 recordar,imperativo afirmativo,tú,recuerda,Recuerda llamarme mañana.
-recordar,imperativo afirmativo,usted/él/ella,recuerde,Recuerde traer el informe.
-recordar,imperativo afirmativo,nosotros/nosotras,recordemos,Recordemos siempre este día.
-recordar,imperativo afirmativo,vosotros/vosotras,recordad,Recordad las instrucciones.
-recordar,imperativo afirmativo,ustedes/ellos/ellas,recuerden,Recuerden sus compromisos.
+recordar,imperativo afirmativo,usted,recuerde,Recuerde traer el informe.
+recordar,imperativo afirmativo,nosotros/as,recordemos,Recordemos siempre este día.
+recordar,imperativo afirmativo,vosotros/as,recordad,Recordad las instrucciones.
+recordar,imperativo afirmativo,ustedes,recuerden,Recuerden sus compromisos.
 recordar,imperativo negativo,tú,no recuerdes,No recuerdes lo que dije.
-recordar,imperativo negativo,usted/él/ella,no recuerde,No recuerde mencionarlo.
-recordar,imperativo negativo,nosotros/nosotras,no recordemos,No recordemos lo malo.
-recordar,imperativo negativo,vosotros/vosotras,no recordéis,No recordéis el pasado.
-recordar,imperativo negativo,ustedes/ellos/ellas,no recuerden,No recuerden esos momentos difíciles.
+recordar,imperativo negativo,usted,no recuerde,No recuerde mencionarlo.
+recordar,imperativo negativo,nosotros/as,no recordemos,No recordemos lo malo.
+recordar,imperativo negativo,vosotros/as,no recordéis,No recordéis el pasado.
+recordar,imperativo negativo,ustedes,no recuerden,No recuerden esos momentos difíciles.
 escribir,imperativo afirmativo,tú,escribe,Escribe una carta.
-escribir,imperativo afirmativo,usted/él/ella,escriba,Escriba su nombre aquí.
-escribir,imperativo afirmativo,nosotros/nosotras,escribamos,Escribamos juntos el informe.
-escribir,imperativo afirmativo,vosotros/vosotras,escribid,Escribid vuestras ideas.
-escribir,imperativo afirmativo,ustedes/ellos/ellas,escriban,Escriban sus respuestas.
+escribir,imperativo afirmativo,usted,escriba,Escriba su nombre aquí.
+escribir,imperativo afirmativo,nosotros/as,escribamos,Escribamos juntos el informe.
+escribir,imperativo afirmativo,vosotros/as,escribid,Escribid vuestras ideas.
+escribir,imperativo afirmativo,ustedes,escriban,Escriban sus respuestas.
 escribir,imperativo negativo,tú,no escribas,No escribas en ese papel.
-escribir,imperativo negativo,usted/él/ella,no escriba,No escriba en la pizarra.
-escribir,imperativo negativo,nosotros/nosotras,no escribamos,No escribamos en la mesa.
-escribir,imperativo negativo,vosotros/vosotras,no escribáis,No escribáis en los libros.
-escribir,imperativo negativo,ustedes/ellos/ellas,no escriban,No escriban en la pared.
+escribir,imperativo negativo,usted,no escriba,No escriba en la pizarra.
+escribir,imperativo negativo,nosotros/as,no escribamos,No escribamos en la mesa.
+escribir,imperativo negativo,vosotros/as,no escribáis,No escribáis en los libros.
+escribir,imperativo negativo,ustedes,no escriban,No escriban en la pared.
 amar,imperativo afirmativo,tú,ama,Ama a tu familia.
-amar,imperativo afirmativo,usted/él/ella,ame,Ame a los demás.
-amar,imperativo afirmativo,nosotros/nosotras,amemos,Amemos la paz.
-amar,imperativo afirmativo,vosotros/vosotras,amad,Amad sinceramente.
-amar,imperativo afirmativo,ustedes/ellos/ellas,amen,Amen a todos por igual.
+amar,imperativo afirmativo,usted,ame,Ame a los demás.
+amar,imperativo afirmativo,nosotros/as,amemos,Amemos la paz.
+amar,imperativo afirmativo,vosotros/as,amad,Amad sinceramente.
+amar,imperativo afirmativo,ustedes,amen,Amen a todos por igual.
 amar,imperativo negativo,tú,no ames,No ames con condiciones.
-amar,imperativo negativo,usted/él/ella,no ame,No ame solo por interés.
-amar,imperativo negativo,nosotros/nosotras,no amemos,No amemos el odio.
-amar,imperativo negativo,vosotros/vosotras,no améis,No améis sin sinceridad.
-amar,imperativo negativo,ustedes/ellos/ellas,no amen,No amen a costa de otros.
+amar,imperativo negativo,usted,no ame,No ame solo por interés.
+amar,imperativo negativo,nosotros/as,no amemos,No amemos el odio.
+amar,imperativo negativo,vosotros/as,no améis,No améis sin sinceridad.
+amar,imperativo negativo,ustedes,no amen,No amen a costa de otros.
 correr,imperativo afirmativo,tú,corre,Corre rápido.
-correr,imperativo afirmativo,usted/él/ella,corra,Corra hacia la meta.
-correr,imperativo afirmativo,nosotros/nosotras,corramos,Corramos juntos.
-correr,imperativo afirmativo,vosotros/vosotras,corred,Corred más rápido.
-correr,imperativo afirmativo,ustedes/ellos/ellas,corran,Corran con cuidado.
+correr,imperativo afirmativo,usted,corra,Corra hacia la meta.
+correr,imperativo afirmativo,nosotros/as,corramos,Corramos juntos.
+correr,imperativo afirmativo,vosotros/as,corred,Corred más rápido.
+correr,imperativo afirmativo,ustedes,corran,Corran con cuidado.
 correr,imperativo negativo,tú,no corras,No corras tanto.
-correr,imperativo negativo,usted/él/ella,no corra,No corra por ahí.
-correr,imperativo negativo,nosotros/nosotras,no corramos,No corramos riesgos innecesarios.
-correr,imperativo negativo,vosotros/vosotras,no corráis,No corráis tan lejos.
-correr,imperativo negativo,ustedes/ellos/ellas,no corran,No corran en ese pasillo.
+correr,imperativo negativo,usted,no corra,No corra por ahí.
+correr,imperativo negativo,nosotros/as,no corramos,No corramos riesgos innecesarios.
+correr,imperativo negativo,vosotros/as,no corráis,No corráis tan lejos.
+correr,imperativo negativo,ustedes,no corran,No corran en ese pasillo.
 dormir,imperativo afirmativo,tú,duerme,Duerme bien esta noche.
-dormir,imperativo afirmativo,usted/él/ella,duerma,Duerma la siesta.
-dormir,imperativo afirmativo,nosotros/nosotras,durmamos,Durmamos temprano hoy.
-dormir,imperativo afirmativo,vosotros/vosotras,dormid,Dormid en vuestra habitación.
-dormir,imperativo afirmativo,ustedes/ellos/ellas,duerman,Duerman tranquilos.
+dormir,imperativo afirmativo,usted,duerma,Duerma la siesta.
+dormir,imperativo afirmativo,nosotros/as,durmamos,Durmamos temprano hoy.
+dormir,imperativo afirmativo,vosotros/as,dormid,Dormid en vuestra habitación.
+dormir,imperativo afirmativo,ustedes,duerman,Duerman tranquilos.
 dormir,imperativo negativo,tú,no duermas,No duermas tanto durante el día.
-dormir,imperativo negativo,usted/él/ella,no duerma,No duerma en la sala.
-dormir,imperativo negativo,nosotros/nosotras,no durmamos,No durmamos ahora.
-dormir,imperativo negativo,vosotros/vosotras,no durmáis,No durmáis en clase.
-dormir,imperativo negativo,ustedes/ellos/ellas,no duerman,No duerman en la mesa.
+dormir,imperativo negativo,usted,no duerma,No duerma en la sala.
+dormir,imperativo negativo,nosotros/as,no durmamos,No durmamos ahora.
+dormir,imperativo negativo,vosotros/as,no durmáis,No durmáis en clase.
+dormir,imperativo negativo,ustedes,no duerman,No duerman en la mesa.
 poner,imperativo afirmativo,tú,pon,Pon la mesa.
-poner,imperativo afirmativo,usted/él/ella,ponga,Ponga atención.
-poner,imperativo afirmativo,nosotros/nosotras,pongamos,Pongamos más esfuerzo.
-poner,imperativo afirmativo,vosotros/vosotras,pone,Poned los libros en la estantería.
-poner,imperativo afirmativo,ustedes/ellos/ellas,pongan,Pongan las cartas sobre la mesa.
+poner,imperativo afirmativo,usted,ponga,Ponga atención.
+poner,imperativo afirmativo,nosotros/as,pongamos,Pongamos más esfuerzo.
+poner,imperativo afirmativo,vosotros/as,pone,Poned los libros en la estantería.
+poner,imperativo afirmativo,ustedes,pongan,Pongan las cartas sobre la mesa.
 poner,imperativo negativo,tú,no pongas,No pongas excusas.
-poner,imperativo negativo,usted/él/ella,no ponga,No ponga el vaso ahí.
-poner,imperativo negativo,nosotros/nosotras,no pongamos,No pongamos en riesgo nuestra seguridad.
-poner,imperativo negativo,vosotros/vosotras,no pongáis,No pongáis los pies encima de la mesa.
-poner,imperativo negativo,ustedes/ellos/ellas,no pongan,No pongan las llaves en el bolsillo trasero.
+poner,imperativo negativo,usted,no ponga,No ponga el vaso ahí.
+poner,imperativo negativo,nosotros/as,no pongamos,No pongamos en riesgo nuestra seguridad.
+poner,imperativo negativo,vosotros/as,no pongáis,No pongáis los pies encima de la mesa.
+poner,imperativo negativo,ustedes,no pongan,No pongan las llaves en el bolsillo trasero.
 volar,imperativo afirmativo,tú,vuela,Vuela alto.
-volar,imperativo afirmativo,usted/él/ella,vuele,Vuele con precaución.
-volar,imperativo afirmativo,nosotros/nosotras,volemos,Volemos juntos.
-volar,imperativo afirmativo,vosotros/vosotras,volad,Volad hacia el cielo.
-volar,imperativo afirmativo,ustedes/ellos/ellas,vuelen,Vuelen con seguridad.
+volar,imperativo afirmativo,usted,vuele,Vuele con precaución.
+volar,imperativo afirmativo,nosotros/as,volemos,Volemos juntos.
+volar,imperativo afirmativo,vosotros/as,volad,Volad hacia el cielo.
+volar,imperativo afirmativo,ustedes,vuelen,Vuelen con seguridad.
 volar,imperativo negativo,tú,no vueles,No vueles tan cerca del borde.
-volar,imperativo negativo,usted/él/ella,no vuele,No vuele en esta área restringida.
-volar,imperativo negativo,nosotros/nosotras,no volemos,No volemos con mal tiempo.
-volar,imperativo negativo,vosotros/vosotras,no voléis,No voléis tan rápido.
-volar,imperativo negativo,ustedes/ellos/ellas,no vuelen,No vuelen demasiado alto.
+volar,imperativo negativo,usted,no vuele,No vuele en esta área restringida.
+volar,imperativo negativo,nosotros/as,no volemos,No volemos con mal tiempo.
+volar,imperativo negativo,vosotros/as,no voléis,No voléis tan rápido.
+volar,imperativo negativo,ustedes,no vuelen,No vuelen demasiado alto.
 escuchar,imperativo afirmativo,tú,escucha,Escucha la música.
-escuchar,imperativo afirmativo,usted/él/ella,escuche,Escuche con atención.
-escuchar,imperativo afirmativo,nosotros/nosotras,escuchemos,Escuchemos la conferencia.
-escuchar,imperativo afirmativo,vosotros/vosotras,escuchad,Escuchad las instrucciones.
-escuchar,imperativo afirmativo,ustedes/ellos/ellas,escuchen,Escuchen al profesor.
+escuchar,imperativo afirmativo,usted,escuche,Escuche con atención.
+escuchar,imperativo afirmativo,nosotros/as,escuchemos,Escuchemos la conferencia.
+escuchar,imperativo afirmativo,vosotros/as,escuchad,Escuchad las instrucciones.
+escuchar,imperativo afirmativo,ustedes,escuchen,Escuchen al profesor.
 escuchar,imperativo negativo,tú,no escuches,No escuches conversaciones privadas.
-escuchar,imperativo negativo,usted/él/ella,no escuche,No escuche la radio tan alta.
-escuchar,imperativo negativo,nosotros/nosotras,no escuchemos,No escuchemos chismes.
-escuchar,imperativo negativo,vosotros/vosotras,no escuchéis,No escuchéis sin permiso.
-escuchar,imperativo negativo,ustedes/ellos/ellas,no escuchen,No escuchen esos rumores.
+escuchar,imperativo negativo,usted,no escuche,No escuche la radio tan alta.
+escuchar,imperativo negativo,nosotros/as,no escuchemos,No escuchemos chismes.
+escuchar,imperativo negativo,vosotros/as,no escuchéis,No escuchéis sin permiso.
+escuchar,imperativo negativo,ustedes,no escuchen,No escuchen esos rumores.
 tomar,imperativo afirmativo,tú,toma,Toma este medicamento.
-tomar,imperativo afirmativo,usted/él/ella,tome,Tome asiento por favor.
-tomar,imperativo afirmativo,nosotros/nosotras,tomemos,Tomemos una decisión.
-tomar,imperativo afirmativo,vosotros/vosotras,tomad,Tomad un descanso.
-tomar,imperativo afirmativo,ustedes/ellos/ellas,tomen,Tomen sus libros.
+tomar,imperativo afirmativo,usted,tome,Tome asiento por favor.
+tomar,imperativo afirmativo,nosotros/as,tomemos,Tomemos una decisión.
+tomar,imperativo afirmativo,vosotros/as,tomad,Tomad un descanso.
+tomar,imperativo afirmativo,ustedes,tomen,Tomen sus libros.
 tomar,imperativo negativo,tú,no tomes,No tomes esa ruta.
-tomar,imperativo negativo,usted/él/ella,no tome,No tome café antes de dormir.
-tomar,imperativo negativo,nosotros/nosotras,no tomemos,No tomemos decisiones apresuradas.
-tomar,imperativo negativo,vosotros/vosotras,no toméis,No toméis más de lo necesario.
-tomar,imperativo negativo,ustedes/ellos/ellas,no tomen,No tomen fotos aquí.
+tomar,imperativo negativo,usted,no tome,No tome café antes de dormir.
+tomar,imperativo negativo,nosotros/as,no tomemos,No tomemos decisiones apresuradas.
+tomar,imperativo negativo,vosotros/as,no toméis,No toméis más de lo necesario.
+tomar,imperativo negativo,ustedes,no tomen,No tomen fotos aquí.
 conocer,imperativo afirmativo,tú,conoce,Conoce nuevos lugares.
-conocer,imperativo afirmativo,usted/él/ella,conozca,Conozca a su vecino.
-conocer,imperativo afirmativo,nosotros/nosotras,conozcamos,Conozcamos la verdad.
-conocer,imperativo afirmativo,vosotros/vosotras,conoced,Conoced mejor la historia.
-conocer,imperativo afirmativo,ustedes/ellos/ellas,conozcan,Conozcan las reglas del juego.
+conocer,imperativo afirmativo,usted,conozca,Conozca a su vecino.
+conocer,imperativo afirmativo,nosotros/as,conozcamos,Conozcamos la verdad.
+conocer,imperativo afirmativo,vosotros/as,conoced,Conoced mejor la historia.
+conocer,imperativo afirmativo,ustedes,conozcan,Conozcan las reglas del juego.
 conocer,imperativo negativo,tú,no conozcas,No conozcas a nadie aquí.
-conocer,imperativo negativo,usted/él/ella,no conozca,No conozca esos secretos.
-conocer,imperativo negativo,nosotros/nosotras,no conozcamos,No conozcamos ese camino.
-conocer,imperativo negativo,vosotros/vosotras,no conozcáis,No conozcáis sus intenciones.
-conocer,imperativo negativo,ustedes/ellos/ellas,no conozcan,No conozcan el peligro.
+conocer,imperativo negativo,usted,no conozca,No conozca esos secretos.
+conocer,imperativo negativo,nosotros/as,no conozcamos,No conozcamos ese camino.
+conocer,imperativo negativo,vosotros/as,no conozcáis,No conozcáis sus intenciones.
+conocer,imperativo negativo,ustedes,no conozcan,No conozcan el peligro.
 reír,imperativo afirmativo,tú,ríe,Ríe con tus amigos.
-reír,imperativo afirmativo,usted/él/ella,ría,Ría más a menudo.
-reír,imperativo afirmativo,nosotros/nosotras,riamos,Riamos juntos.
-reír,imperativo afirmativo,vosotros/vosotras,reíd,Reíd con alegría.
-reír,imperativo afirmativo,ustedes/ellos/ellas,rían,Rían sin preocupaciones.
+reír,imperativo afirmativo,usted,ría,Ría más a menudo.
+reír,imperativo afirmativo,nosotros/as,riamos,Riamos juntos.
+reír,imperativo afirmativo,vosotros/as,reíd,Reíd con alegría.
+reír,imperativo afirmativo,ustedes,rían,Rían sin preocupaciones.
 reír,imperativo negativo,tú,no rías,No rías en la iglesia.
-reír,imperativo negativo,usted/él/ella,no ría,No ría de los demás.
-reír,imperativo negativo,nosotros/nosotras,no riamos,No riamos a costa de otros.
-reír,imperativo negativo,vosotros/vosotras,no riáis,No riáis tanto en clase.
-reír,imperativo negativo,ustedes/ellos/ellas,no rían,No rían cuando sea inapropiado.
+reír,imperativo negativo,usted,no ría,No ría de los demás.
+reír,imperativo negativo,nosotros/as,no riamos,No riamos a costa de otros.
+reír,imperativo negativo,vosotros/as,no riáis,No riáis tanto en clase.
+reír,imperativo negativo,ustedes,no rían,No rían cuando sea inapropiado.
 caer,imperativo afirmativo,tú,cae,Cae con cuidado.
-caer,imperativo afirmativo,usted/él/ella,caiga,Caiga suavemente.
-caer,imperativo afirmativo,nosotros/nosotras,caigamos,Caigamos juntos.
-caer,imperativo afirmativo,vosotros/vosotras,caed,Caed con gracia.
-caer,imperativo afirmativo,ustedes/ellos/ellas,caigan,Caigan con seguridad.
+caer,imperativo afirmativo,usted,caiga,Caiga suavemente.
+caer,imperativo afirmativo,nosotros/as,caigamos,Caigamos juntos.
+caer,imperativo afirmativo,vosotros/as,caed,Caed con gracia.
+caer,imperativo afirmativo,ustedes,caigan,Caigan con seguridad.
 caer,imperativo negativo,tú,no caigas,No caigas en la trampa.
-caer,imperativo negativo,usted/él/ella,no caiga,No caiga la noche sin un plan.
-caer,imperativo negativo,nosotros/nosotras,no caigamos,No caigamos en el mismo error.
-caer,imperativo negativo,vosotros/vosotras,no caigáis,No caigáis en la desesperación.
-caer,imperativo negativo,ustedes/ellos/ellas,no caigan,No caigan en la desidia.
+caer,imperativo negativo,usted,no caiga,No caiga la noche sin un plan.
+caer,imperativo negativo,nosotros/as,no caigamos,No caigamos en el mismo error.
+caer,imperativo negativo,vosotros/as,no caigáis,No caigáis en la desesperación.
+caer,imperativo negativo,ustedes,no caigan,No caigan en la desidia.
 decidir,imperativo afirmativo,tú,decide,Decide ahora.
-decidir,imperativo afirmativo,usted/él/ella,decida,Decida usted misma.
-decidir,imperativo afirmativo,nosotros/nosotras,decidamos,Decidamos juntos.
-decidir,imperativo afirmativo,vosotros/vosotras,decidid,Decidid con responsabilidad.
-decidir,imperativo afirmativo,ustedes/ellos/ellas,decidan,Decidan libremente.
+decidir,imperativo afirmativo,usted,decida,Decida usted misma.
+decidir,imperativo afirmativo,nosotros/as,decidamos,Decidamos juntos.
+decidir,imperativo afirmativo,vosotros/as,decidid,Decidid con responsabilidad.
+decidir,imperativo afirmativo,ustedes,decidan,Decidan libremente.
 decidir,imperativo negativo,tú,no decidas,No decidas apresuradamente.
-decidir,imperativo negativo,usted/él/ella,no decida,No decida sin pensar.
-decidir,imperativo negativo,nosotros/nosotras,no decidamos,No decidamos sin consenso.
-decidir,imperativo negativo,vosotros/vosotras,no decidáis,No decidáis sin información.
-decidir,imperativo negativo,ustedes/ellos/ellas,no decidan,No decidan por mí.
+decidir,imperativo negativo,usted,no decida,No decida sin pensar.
+decidir,imperativo negativo,nosotros/as,no decidamos,No decidamos sin consenso.
+decidir,imperativo negativo,vosotros/as,no decidáis,No decidáis sin información.
+decidir,imperativo negativo,ustedes,no decidan,No decidan por mí.
+venir,imperativo afirmativo,tú,ven,Ven conmigo.
+venir,imperativo afirmativo,usted,venga,Venga aquí.
+venir,imperativo afirmativo,nosotros/as,vengamos,Vengamos pronto.
+venir,imperativo afirmativo,vosotros/as,venid,Venid con nosotros.
+venir,imperativo afirmativo,ustedes,vengan,Vengan con nosotros.
+venir,imperativo negativo,tú,no vengas,No vengas tarde.
+venir,imperativo negativo,usted,no venga,No venga por aquí.
+venir,imperativo negativo,nosotros/as,no vengamos,No vengamos sin invitación.
+venir,imperativo negativo,vosotros/as,no vengáis,No vengáis sin permiso.
+venir,imperativo negativo,ustedes,no vengan,No vengan sin avisar.
+valer,imperativo afirmativo,tú,vale,Vale la pena intentarlo.
+valer,imperativo afirmativo,usted,valga,Valga la regla general.
+valer,imperativo afirmativo,nosotros/as,valgamos,Valgamos lo que tenemos.
+valer,imperativo afirmativo,vosotros/as,valed,Valed la alegría.
+valer,imperativo afirmativo,ustedes,valgan,Valgan sus esfuerzos.
+valer,imperativo negativo,tú,no valgas,No valgas menos de lo que vales.
+valer,imperativo negativo,usted,no valga,No valga la pena.
+valer,imperativo negativo,nosotros/as,no valgamos,No valgamos la tristeza.
+valer,imperativo negativo,vosotros/as,no valgáis,No valgáis la apatía.
+valer,imperativo negativo,ustedes,no valgan,No valgan el riesgo.
