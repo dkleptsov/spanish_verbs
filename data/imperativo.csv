@@ -82,7 +82,7 @@ saber,imperativo negativo,ustedes,no sepan,No sepan los detalles exactos.
 querer,imperativo afirmativo,tú,quiere,¡Quiere escuchar!
 querer,imperativo afirmativo,usted,quiera,¡Quiera tener un buen día!
 querer,imperativo afirmativo,nosotros/as,queramos,¡Queramos ganar!
-querer,imperativo afirmativo,vosotros/as,queréis,¡Queréis venir con nosotros!
+querer,imperativo afirmativo,vosotros/as,quered,¡Quered venir con nosotros!
 querer,imperativo afirmativo,ustedes,quieran,¡Quieran más paz!
 querer,imperativo negativo,tú,no quieras,¡No quieras molestar!
 querer,imperativo negativo,usted,no quiera,¡No quiera salir!
@@ -102,7 +102,7 @@ llegar,imperativo negativo,ustedes,no lleguen,No lleguen después de las 10.
 poder,imperativo afirmativo,tú,puede,Puedes venir más tarde.
 poder,imperativo afirmativo,usted,pueda,Pueda usted resolver este problema.
 poder,imperativo afirmativo,nosotros/as,podamos,Podamos ayudarle.
-poder,imperativo afirmativo,vosotros/as,podéis,Podéis traer los documentos.
+poder,imperativo afirmativo,vosotros/as,poded,Poded traer los documentos.
 poder,imperativo afirmativo,ustedes,puedan,Puedan empezar sin mí.
 poder,imperativo negativo,tú,no puedas,No puedas olvidar esto.
 poder,imperativo negativo,usted,no pueda,No pueda hablar ahora.
@@ -257,7 +257,7 @@ comenzar,imperativo afirmativo,ustedes,comiencen,Comiencen con el proceso.
 comenzar,imperativo negativo,tú,no comiences,No comiences sin prepararte.
 comenzar,imperativo negativo,usted,no comience,No comience sin autorización.
 comenzar,imperativo negativo,nosotros/as,no comencemos,No comencemos sin planificar.
-comenzar,imperativo negativo,vosotros/as,no comenzad,No comenzad sin instrucciones.
+comenzar,imperativo negativo,vosotros/as,no comencéis,No comencéis sin instrucciones.
 comenzar,imperativo negativo,ustedes,no comiencen,No comiencen sin consultar.
 entender,imperativo afirmativo,tú,entiende,Entiende el problema.
 entender,imperativo afirmativo,usted,entienda,Entienda la situación.
@@ -349,16 +349,6 @@ dejar,imperativo negativo,usted,no deje,No deje de practicar.
 dejar,imperativo negativo,nosotros/as,no dejemos,No dejemos que eso nos afecte.
 dejar,imperativo negativo,vosotros/as,no dejéis,No dejéis las llaves puestas.
 dejar,imperativo negativo,ustedes,no dejen,No dejen de lado sus sueños.
-seguir,imperativo afirmativo,tú,sigue,Sigue adelante.
-seguir,imperativo afirmativo,usted,siga,Siga las instrucciones.
-seguir,imperativo afirmativo,nosotros/as,sigamos,Sigamos trabajando juntos.
-seguir,imperativo afirmativo,vosotros/as,seguid,Seguid el camino marcado.
-seguir,imperativo afirmativo,ustedes,sigan,Sigan con el buen trabajo.
-seguir,imperativo negativo,tú,no sigas,No sigas por ese camino.
-seguir,imperativo negativo,usted,no siga,No siga discutiendo.
-seguir,imperativo negativo,nosotros/as,no sigamos,No sigamos esperando.
-seguir,imperativo negativo,vosotros/as,no sigáis,No sigáis las malas influencias.
-seguir,imperativo negativo,ustedes,no sigan,No sigan perdiendo tiempo.
 recordar,imperativo afirmativo,tú,recuerda,Recuerda llamarme mañana.
 recordar,imperativo afirmativo,usted,recuerde,Recuerde traer el informe.
 recordar,imperativo afirmativo,nosotros/as,recordemos,Recordemos siempre este día.
@@ -409,16 +399,6 @@ dormir,imperativo negativo,usted,no duerma,No duerma en la sala.
 dormir,imperativo negativo,nosotros/as,no durmamos,No durmamos ahora.
 dormir,imperativo negativo,vosotros/as,no durmáis,No durmáis en clase.
 dormir,imperativo negativo,ustedes,no duerman,No duerman en la mesa.
-poner,imperativo afirmativo,tú,pon,Pon la mesa.
-poner,imperativo afirmativo,usted,ponga,Ponga atención.
-poner,imperativo afirmativo,nosotros/as,pongamos,Pongamos más esfuerzo.
-poner,imperativo afirmativo,vosotros/as,pone,Poned los libros en la estantería.
-poner,imperativo afirmativo,ustedes,pongan,Pongan las cartas sobre la mesa.
-poner,imperativo negativo,tú,no pongas,No pongas excusas.
-poner,imperativo negativo,usted,no ponga,No ponga el vaso ahí.
-poner,imperativo negativo,nosotros/as,no pongamos,No pongamos en riesgo nuestra seguridad.
-poner,imperativo negativo,vosotros/as,no pongáis,No pongáis los pies encima de la mesa.
-poner,imperativo negativo,ustedes,no pongan,No pongan las llaves en el bolsillo trasero.
 volar,imperativo afirmativo,tú,vuela,Vuela alto.
 volar,imperativo afirmativo,usted,vuele,Vuele con precaución.
 volar,imperativo afirmativo,nosotros/as,volemos,Volemos juntos.
@@ -519,9 +499,9 @@ levantarse,imperativo negativo,usted,no se levante,No se levante sin razón.
 levantarse,imperativo negativo,nosotros/as,no nos levantemos,No nos levantemos antes de tiempo.
 levantarse,imperativo negativo,vosotros/as,no os levantéis,No os levantéis sin permiso.
 levantarse,imperativo negativo,ustedes,no se levanten,No se levanten sin terminar.
-ducharse,imperativo afirmativo,tú,ducha,Dúchate antes de salir.
-ducharse,imperativo afirmativo,usted,duche,Dúchese después del ejercicio.
-ducharse,imperativo afirmativo,nosotros/as,duchémosnos,Dúchémosnos rápidamente.
+ducharse,imperativo afirmativo,tú,dúchate,Dúchate antes de salir.
+ducharse,imperativo afirmativo,usted,dúchese,Dúchese después del ejercicio.
+ducharse,imperativo afirmativo,nosotros/as,duchémonos,Duchémonos rápidamente.
 ducharse,imperativo afirmativo,vosotros/as,duchaos,Duchaos en turnos.
 ducharse,imperativo afirmativo,ustedes,duchénse,Duchénse con agua caliente.
 ducharse,imperativo negativo,tú,no te duches,No te duches tan tarde.
