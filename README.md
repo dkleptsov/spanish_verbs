@@ -52,7 +52,7 @@
 
 spanish_verbs/
 ├── .github/
-    └── workflows/
+│   └── workflows/
 │       └── pylint.yml          # github workflow to linter Python code
 ├── data/
 │   └── imperativo.csv          # CSV база данных с глаголами и примерами
