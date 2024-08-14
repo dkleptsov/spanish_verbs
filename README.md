@@ -4,7 +4,7 @@
 ![SQLite](https://img.shields.io/badge/SQLite-Database-lightgrey)
 ![Docker](https://img.shields.io/badge/Docker-Available-blue?logo=docker&logoColor=white)
 ![aiogram](https://img.shields.io/badge/aiogram-3.0-yellowgreen)
-![Pytest](https://github.com/username/repository/actions/workflows/pytest.yml/badge.svg)
+![Pytest](https://github.com/dkleptsov/spanish_verbs/actions/workflows/pytest.yml/badge.svg)
 
 
 
