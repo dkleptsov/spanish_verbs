@@ -85,7 +85,7 @@ Ensure you have the following installed:
 spanish_verbs/
 ├── .github/
 │   └── workflows/
-│       └── pylint.yml               # github workflow Pylint
+│       └── pylint.yml               # github workflow Pytest
 ├── data
 │   ├── imperativo.csv               # CSV database 
 │   ├── imperativo.db                # SQL database
