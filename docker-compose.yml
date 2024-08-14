@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: ./Dockerfile
     environment:
-      - VERBOS_ESP_TEST_BOT
+      - SPANISH_VERBS_BOT
     container_name: spanish_verbs_bot
     restart: always
   restarter:

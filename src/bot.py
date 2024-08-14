@@ -5,7 +5,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.fsm.strategy import FSMStrategy
 from bot_handlers import register_handlers, set_bot_commands
 
-API_TOKEN = os.getenv("VERBOS_ESP_TEST_BOT")
+API_TOKEN = os.getenv("SPANISH_VERBS_BOT")
 
 if not API_TOKEN:
     raise ValueError("API_TOKEN no está establecido o no es válido.")
