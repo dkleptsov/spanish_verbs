@@ -4,16 +4,26 @@
 ![aiogram](https://img.shields.io/badge/aiogram-3.0-yellowgreen)
 ![SQLite](https://img.shields.io/badge/SQLite-Database-lightgrey)
 
-## 📚 Описание
 
-Этот проект — интерактивная игра в Telegram для изучения и практики спряжения испанских глаголов. Пользователи могут улучшать свои знания испанского языка, угадывая правильные формы глаголов в различных временах. Бот не только проверяет правильность ответа, но и предоставляет примеры использования глагола в контексте.
+<p align="center">
+  <img src="images/spanish_verbs_bot_icon.png" alt="GitHub Logo">
+</p>
 
-## 🚀 Функционал
 
-- **Игра без остановок** — бот автоматически начинает новую игру после каждого ответа.
-- **Примеры предложений** — после каждого ответа предоставляется пример использования глагола.
-- **Многообразие времен** — все основные времена испанского языка в одной игре.
-- **Поддержка FSM** — бот сохраняет состояние игры для каждого пользователя.
+## 📚 Description
+
+This project is an interactive game on Telegram for learning and practicing Spanish verb conjugation. Users can improve their Spanish language skills by guessing the correct verb forms in various tenses. The bot not only checks the correctness of the answers but also provides examples of the verb usage in context.
+
+## Demo
+
+Check out the [Online Demo](https://t.me/esp_verbs_bot) to see the project in action!
+
+## 🚀 Features
+
+- **FSM Support** — The bot maintains the game state for each user.
+- **Example Sentences** — After each answer, an example of the verb's usage is provided.
+- **Variety of Tenses** — All major Spanish tenses in a single game.
+- **Continuous Play** — The bot automatically starts a new game after each response.
 
 ## 🛠️ Установка
 
