@@ -96,6 +96,8 @@ spanish_verbs/
 │   ├── bot_handlers.py              # Handlers of bot commands
 │   ├── bot.py                       # Bot main file
 │   └── import_data.py               # Script to convert CSV to SQL
+├── tests
+│   └── csv_db_test.py               # Tests for csv db
 ├── docker-compose.yml               # Docker-compose file
 ├── Dockerfile                       # Dockerfile instructions
 ├── README.md                        # This file
