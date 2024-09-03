@@ -1,13 +1,13 @@
 version: '3.7'
 
 services:
-  rgbot:
+  tg_bot:
     image: kleptsov/spanish_verbs_bot
     build:
       context: .
       dockerfile: ./Dockerfile
-    environment:
-      - SPANISH_VERBS_BOT
+    env_file:
+      - .env
     container_name: spanish_verbs_bot
     restart: always
   restarter:

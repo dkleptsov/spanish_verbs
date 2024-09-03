@@ -57,7 +57,7 @@ Ensure you have the following installed:
   Make sure you have set your Telegram API token:
 
   ```bash
-  export SPANISH_VERBS_BOT='YOUR_TELEGRAM_BOT_TOKEN'
+  echo "SPANISH_VERBS_BOT='YOUR_TELEGRAM_BOT_TOKEN'" > .env
   ```
 
 3. **Build and Start the Services:**
