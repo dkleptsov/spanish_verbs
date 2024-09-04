@@ -93,6 +93,8 @@ spanish_verbs/
 ├── images
 │   ├── imperativo.jpg               # Grammasr cheat sheet
 │   └── spanish_verbs_bot_logo.png   # Bot logo
+├── sql
+│   └── import_data.sql              # Script to import from CSV to PostgreSQL
 ├── src
 │   ├── bot_handlers.py              # Handlers of bot commands
 │   ├── bot.py                       # Bot main file
