@@ -1,14 +1,11 @@
 import os
-import sqlite3
+import psycopg2
 from aiogram import types
 from aiogram.filters import Command
 from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
 from aiogram import Dispatcher, Bot
-
-
-DB_PATH = "data/imperativo.db"
 
 
 class GameStates(StatesGroup):
@@ -18,8 +15,8 @@ class GameStates(StatesGroup):
 def get_main_keyboard():
     keyboard = ReplyKeyboardMarkup(
         keyboard=[
-            [KeyboardButton(text="💡 Ayuda")],
-            [KeyboardButton(text="🦾 Sobre este bot")],
+            [KeyboardButton(text="💡 Help")],
+            [KeyboardButton(text="🦾 About this bot")],
         ],
         resize_keyboard=True,
         selective=True,
@@ -28,20 +25,20 @@ def get_main_keyboard():
 
 
 async def show_welcome(message: Message, state: FSMContext):
-    welcome_text = "¡Bienvenido al juego de los verbos en español!\nEscribe /play para empezar a jugar."
+    welcome_text = "Welcome to Spanish verbs game!\nSend /play to start a new game."
     await message.answer(welcome_text) #, reply_markup=get_main_keyboard()
 
 
 async def show_help(message: Message, state: FSMContext):
     help_text = (
-        "¡Bienvenido al juego de los verbos en español!\n\n"
-        "Comandos disponibles:\n"
-        "/start - Iniciar bot\n"
-        "/help - Mostrar este mensaje de ayuda\n"
-        "/play - Iniciar el juego\n"
-        "/about - Sobre este bot\n\n"
-        "En el juego se le ofrecerá verbos en español con el tiempo y el sujeto. "
-        "Su tarea es escribir la forma correcta del verbo.\n"
+        "Welcome to Spanish verbs game!\n\n"
+        "Available commands:\n"
+        "/start - Start this bot.\n"
+        "/help - Show this help message.\n"
+        "/play - Begin new game.\n"
+        "/about - About this bot.\n\n"
+        "The game will offer verb in Spanish, tense and subject. "
+        "Your task is to write correct corresponding verb form.\n"
         "¡Buena suerte!"
     )
     await message.answer(help_text) #, reply_markup=get_main_keyboard()
@@ -49,44 +46,46 @@ async def show_help(message: Message, state: FSMContext):
 
 async def show_about(message: Message, state: FSMContext):
     about_text = (
-        f"Este bot fue creado por Denis para ayudar a aprender español. \nDatabase: {DB_PATH}"
+        f"This bot was created by Denis to help learn Spanish."
     )
     await message.answer(about_text) # , reply_markup=get_main_keyboard()
 
 
 def get_random_verb_form(cursor):
     cursor.execute('''
-        SELECT verb_forms.id, verbs.verb, tenses.tense, subjects.subject, verb_forms.form, examples.example
-        FROM verb_forms
-        JOIN verbs ON verb_forms.verb_id = verbs.id
-        JOIN tenses ON verb_forms.tense_id = tenses.id
-        JOIN subjects ON verb_forms.subject_id = subjects.id
-        JOIN examples ON verb_forms.id = examples.verb_form_id
-        ORDER BY RANDOM() LIMIT 1
+    SELECT verb_form.id, verb.name, tense.name, subject.name, verb_form.form, verb_form.example
+    FROM verb_form
+    JOIN verb ON verb.id=verb_form.verb_id
+    JOIN tense ON tense.id=verb_form.tense_id
+    JOIN subject ON subject.id=verb_form.subject_id
+    ORDER BY RANDOM() LIMIT 1;
     ''')
     return cursor.fetchone()
 
 
 async def start_game(message: Message, state: FSMContext):
-    if not os.path.exists(DB_PATH):
-        await message.answer(f"Base de datos no encontrada en: {DB_PATH}")
-        return
-    
     try:
-        conn = sqlite3.connect(DB_PATH)
+        conn = psycopg2.connect(
+        host=os.getenv('DB_HOST'),
+        port=os.getenv('DB_PORT'),
+        database=os.getenv('DB_DATABASE'),
+        user=os.getenv('DB_USER'),
+        password=os.getenv('DB_PASSWORD')
+        )
         cursor = conn.cursor()
-    except sqlite3.Error as e:
-        await message.answer(f"Error al conectarse a la base de datos: {e}")
+
+    except Exception as e:
+        await message.answer(f"Error connecting to database: {e}")
         return
 
     verb_form = get_random_verb_form(cursor)
     if not verb_form:
-        await message.answer("No hay datos para el juego.")
+        await message.answer("There is no data for the game.")
         conn.close()
         return
 
     verb_form_id, verb, tense, subject, form, example = verb_form
-    game_text = f"Verbo: {verb}\nTiempo: {tense}\nSujeto: {subject}\nEscribe la forma correcta del verbo:"
+    game_text = f"Verb: {verb}\nTense: {tense}\nSubject: {subject}\nWrite corresponding form of this verb:"
     await message.answer(game_text) # , reply_markup=get_main_keyboard()
 
     await state.update_data(verb_form_id=verb_form_id, correct_form=form, example=example)
@@ -105,9 +104,9 @@ async def check_answer(message: Message, state: FSMContext):
     
     user_input = message.text.strip()
     if user_input.lower() == correct_form.lower():
-        await message.answer(f"¡Correcto! \n\nEjemplo: {example}\n\n_") # , reply_markup=get_main_keyboard()
+        await message.answer(f"You are right! \n\nExample: {example}\n\n_") # , reply_markup=get_main_keyboard()
     else:
-        await message.answer(f"Incorrecto. La respuesta correcta es: {correct_form} \n\nEjemplo: {example}\n\n_") # , reply_markup=get_main_keyboard()
+        await message.answer(f"Almost. Correct from is: {correct_form} \n\nExample: {example}\n\n_") # , reply_markup=get_main_keyboard()
 
     # Запускаем новую игру
     await start_game(message, state)
@@ -115,10 +114,10 @@ async def check_answer(message: Message, state: FSMContext):
 
 async def set_bot_commands(bot: Bot):
     commands = [
-        types.BotCommand(command="/start", description="🚀 Iniciar bot"),
-        types.BotCommand(command="/help", description="💡 Cómo funciona"),
-        types.BotCommand(command="/play", description="🎯 Iniciar el juego"),
-        types.BotCommand(command="/about", description="🦾 Sobre este bot"),
+        types.BotCommand(command="/start", description="🚀 Start the bot."),
+        types.BotCommand(command="/help", description="💡 How this bot works."),
+        types.BotCommand(command="/play", description="🎯 Start the game."),
+        types.BotCommand(command="/about", description="🦾 About this bot."),
     ]
     await bot.set_my_commands(commands)
 

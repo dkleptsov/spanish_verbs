@@ -1,7 +1,7 @@
 # 🇪🇸 Spanish Verb Conjugation Game Bot
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
-![SQLite](https://img.shields.io/badge/SQLite-Database-lightgrey)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue)
 ![Docker](https://img.shields.io/badge/Docker-Available-blue?logo=docker&logoColor=white)
 ![aiogram](https://img.shields.io/badge/aiogram-3.0-yellowgreen)
 ![Pytest](https://github.com/dkleptsov/spanish_verbs/actions/workflows/pytest.yml/badge.svg)
@@ -43,6 +43,7 @@ Ensure you have the following installed:
 
 - [Docker](https://www.docker.com/get-started)
 - [Docker Compose](https://docs.docker.com/compose/install/)
+- [PostgreSQL](https://www.postgresql.org/download/)
 
 ### Steps to Setup
 
@@ -54,10 +55,17 @@ Ensure you have the following installed:
 
 2. **Configure environment variable:**
 
-  Make sure you have set your Telegram API token:
+  Make sure you have set your Telegram API token and Postgres credentials:
 
   ```bash
-  echo "SPANISH_VERBS_BOT='YOUR_TELEGRAM_BOT_TOKEN'" > .env
+cat <<EOF > .env
+SPANISH_VERBS_BOT="YOUR_TOKEN"
+DB_HOST='YOUR_POSTGRES_HOST'
+DB_PORT='YOUR_POSTGRES_PORT'
+DB_DATABASE='YOUR_POSTGRES_DB'
+DB_USER='YOUR_POSTGRES_USER'
+DB_PASSWORD='YOUR_POSTGRES_PASSWORD'
+EOF
   ```
 
 3. **Build and Start the Services:**
@@ -88,7 +96,6 @@ spanish_verbs/
 │       └── pylint.yml               # github workflow Pytest
 ├── data
 │   ├── imperativo.csv               # CSV database 
-│   ├── imperativo.db                # SQL database
 │   └── list_of_verbs.txt            # List of 50 most common verbs
 ├── images
 │   ├── imperativo.jpg               # Grammasr cheat sheet
@@ -97,8 +104,7 @@ spanish_verbs/
 │   └── import_data.sql              # Script to import from CSV to PostgreSQL
 ├── src
 │   ├── bot_handlers.py              # Handlers of bot commands
-│   ├── bot.py                       # Bot main file
-│   └── import_data.py               # Script to convert CSV to SQL
+│   └── bot.py                       # Bot main file
 ├── tests
 │   └── csv_db_test.py               # Tests for csv db
 ├── docker-compose.yml               # Docker-compose file
