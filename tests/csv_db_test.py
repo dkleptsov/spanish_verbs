@@ -1,38 +1,36 @@
+""" Tests for CSV database """
+
 import csv
 import pytest
 
-
-with open("sql/imperativo.csv") as csv_file:
-    csv_db = list(csv.reader(csv_file))
-
+# Load CSV data into a list of rows
+with open("sql/imperativo.csv", newline='', encoding='utf-8') as csv_file:
+    csv_data = list(csv.reader(csv_file))
 
 def test_headers() -> None:
     """
-    Test that database has headers.
+    Test that the database has headers.
     """
-    assert csv_db[0] == ['verb','tense','subject','form','example']
+    assert csv_data[0] == ['verb', 'tense', 'subject', 'form', 'example']
 
-
-@pytest.mark.parametrize("row", csv_db)
+@pytest.mark.parametrize("row", csv_data[1:])  # Exclude headers for duplicate check
 def test_csv_db_for_duplicates(row) -> None:
     """ 
-    Test that there is no duplicates.
+    Test that there are no duplicates in the database.
     """
-    assert csv_db.count(row) == 1
+    assert csv_data.count(row) == 1
 
-
-@pytest.mark.parametrize("row", csv_db)
+@pytest.mark.parametrize("row", csv_data[1:])  # Exclude headers for field check
 def test_all_fields_are_present(row) -> None:
     """ 
-    Check that there is no empy fields in new database.
+    Check that there are no empty fields in each row of the database.
     """
     for field in row:
-        assert len(field) > 0
+        assert len(field) > 0, "Field is empty."
 
-
-@pytest.mark.parametrize("row", csv_db)
+@pytest.mark.parametrize("row", csv_data[1:])  # Exclude headers for length check
 def test_all_rows_are_length_5(row) -> None:
     """ 
-    Check that all fields in rows are present.
+    Check that all rows contain exactly 5 fields.
     """
-    assert len(row) == 5
+    assert len(row) == 5, f"Row does not have length 5: {row}"
