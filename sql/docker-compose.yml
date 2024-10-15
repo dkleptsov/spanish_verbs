@@ -1,0 +1,27 @@
+services:
+  postgres:
+    image: postgres:16-bullseye
+    container_name: my_postgres
+    env_file:
+      - ../.env
+    ports:
+      - "127.0.0.1:5432:5432"  # Access only from local machine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init_user_db.sh:/docker-entrypoint-initdb.d/init_user_db.sh
+      - ./imperativo.csv:/docker-entrypoint-initdb.d/imperativo.csv
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    networks:
+      - bot_network
+
+volumes:
+  postgres_data:
+
+networks:
+  bot_network:
+    name: bot_network
