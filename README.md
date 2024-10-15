@@ -52,7 +52,7 @@ Ensure you have the following installed:
    cd spanish_verbs
   ```
 
-2. **Configure environment variable:**
+2. **Set Up Environment Variables:**
 
   Make sure you have set your Telegram API token and Postgres credentials:
 
@@ -73,7 +73,7 @@ DB_USER_PASSWORD="YOUR_POSTGRES_NONROOT_PASSWORD"
 EOF
   ```
 
-3. **Build and Start the Postgres database:**
+3. **Set Up the Postgres database:**
 
   Use Docker Compose to build and start the services defined in your docker-compose.yml file:
 
@@ -83,7 +83,7 @@ EOF
   ```
   This command will build the images (if they don't already exist) and start the containers with the database.
 
-4. **Build and Start the bot:**
+4. **Launch the Bot:**
 
   Use Docker Compose to build and start the services defined in your docker-compose.yml file:
 
@@ -96,7 +96,7 @@ EOF
 
   Check out your bot [https://t.me/YOUR_BOT_NAME](https://t.me/YOUR_BOT_NAME) to see it in action!
 
-6. **Stopping your Telegram bot:**
+6. **Stop your Telegram bot:**
 
   To stop and remove the containers, networks, and volumes created by up:
   ```bash
