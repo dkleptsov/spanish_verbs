@@ -1,5 +1,3 @@
-version: '3.7'
-
 services:
   tg_bot:
     image: kleptsov/spanish_verbs_bot
@@ -10,9 +8,20 @@ services:
       - .env
     container_name: spanish_verbs_bot
     restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    networks:
+      - bot_network
   restarter:
     image: docker
     volumes: ["/var/run/docker.sock:/var/run/docker.sock"]
     command: ["/bin/sh", "-c", "while true; do sleep 21600; docker restart spanish_verbs_bot; done"]
     restart: unless-stopped
     container_name: spanish_verbs_bot_restarter
+
+networks:
+  bot_network:
+    name: bot_network
