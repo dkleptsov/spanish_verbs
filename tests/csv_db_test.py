@@ -2,7 +2,7 @@ import csv
 import pytest
 
 
-with open("data/imperativo.csv") as csv_file:
+with open("sql/imperativo.csv") as csv_file:
     csv_db = list(csv.reader(csv_file))
 
 
