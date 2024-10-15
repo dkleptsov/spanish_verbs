@@ -43,7 +43,6 @@ Ensure you have the following installed:
 
 - [Docker](https://www.docker.com/get-started)
 - [Docker Compose](https://docs.docker.com/compose/install/)
-- [PostgreSQL](https://www.postgresql.org/download/)
 
 ### Steps to Setup
 
@@ -59,29 +58,45 @@ Ensure you have the following installed:
 
   ```bash
 cat <<EOF > .env
+# Bot credentials
 SPANISH_VERBS_BOT="YOUR_TOKEN"
-DB_HOST='YOUR_POSTGRES_HOST'
-DB_PORT='YOUR_POSTGRES_PORT'
-DB_DATABASE='YOUR_POSTGRES_DB'
-DB_USER='YOUR_POSTGRES_USER'
-DB_PASSWORD='YOUR_POSTGRES_PASSWORD'
+# Database parameters
+DB_HOST="my_postgres"
+DB_PORT="5432"
+DB_NAME="spanish_verbs_db"
+# Root user
+POSTGRES_USER="pgdev"
+POSTGRES_PASSWORD="YOUR_POSTGRES_ROOT_PASSWORD"
+# Non root user
+DB_USER='spanish_verbs_user'
+DB_USER_PASSWORD="YOUR_POSTGRES_NONROOT_PASSWORD"
 EOF
   ```
 
-3. **Build and Start the Services:**
+3. **Build and Start the Postgres database:**
 
   Use Docker Compose to build and start the services defined in your docker-compose.yml file:
 
   ```bash
-  docker-compose up --build -d
+  cd sql
+  docker-compose up -d --build --remove-orphans
   ```
-  This command will build the images (if they don't already exist) and start the containers.
+  This command will build the images (if they don't already exist) and start the containers with the database.
 
-4. **Access your Telegram bot:**
+4. **Build and Start the bot:**
+
+  Use Docker Compose to build and start the services defined in your docker-compose.yml file:
+
+  ```bash
+  docker-compose up -d --build --remove-orphans
+  ```
+  This command will build the images (if they don't already exist) and start the containers with the bot.
+
+5. **Access your Telegram bot:**
 
   Check out your bot [https://t.me/YOUR_BOT_NAME](https://t.me/YOUR_BOT_NAME) to see it in action!
 
-5. **Stopping your Telegram bot:**
+6. **Stopping your Telegram bot:**
 
   To stop and remove the containers, networks, and volumes created by up:
   ```bash
@@ -94,20 +109,21 @@ spanish_verbs/
 ├── .github/
 │   └── workflows/
 │       └── pylint.yml               # github workflow Pytest
-├── data
-│   ├── imperativo.csv               # CSV database 
-│   └── list_of_verbs.txt            # List of 50 most common verbs
 ├── images
 │   ├── imperativo.jpg               # Grammasr cheat sheet
 │   └── spanish_verbs_bot_logo.png   # Bot logo
 ├── sql
-│   └── import_data.sql              # Script to import from CSV to PostgreSQL
+│   ├── docker-compose.yml           # Docker-compose file with the Postgres 
+│   ├── init_user_db.sh              # bash script to iniate db and import data 
+│   ├── imperativo.csv               # CSV database 
+│   ├── import_data.sql              # Script to manualy import data
+│   └── list_of_verbs.txt            # List of 50 most common verbs
 ├── src
 │   ├── bot_handlers.py              # Handlers of bot commands
 │   └── bot.py                       # Bot main file
 ├── tests
 │   └── csv_db_test.py               # Tests for csv db
-├── docker-compose.yml               # Docker-compose file
+├── docker-compose.yml               # Docker-compose file with the bot
 ├── Dockerfile                       # Dockerfile instructions
 ├── README.md                        # This file
 └── requirements.txt                 # List of necessary Python libraries
